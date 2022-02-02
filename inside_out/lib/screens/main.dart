@@ -15,7 +15,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyApp> {
-  int currentTab = 0;
+  int currentTab = 2;
 
   final PageStorageBucket bucket = PageStorageBucket();
   Widget currentScreen = Home();
@@ -71,10 +71,6 @@ class _MyHomePageState extends State<MyApp> {
           decoration: const BoxDecoration(
             borderRadius: BorderRadius.only(
                 topRight: Radius.circular(10), topLeft: Radius.circular(10)),
-            // boxShadow: [
-            //   BoxShadow(
-            //       color: Colors.black38, spreadRadius: 0, blurRadius: 0.5),
-            // ],
           ),
           child: ClipRRect(
             borderRadius: const BorderRadius.only(
