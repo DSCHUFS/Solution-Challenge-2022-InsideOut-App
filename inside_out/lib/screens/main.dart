@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:inside_out/screens/board_screen.dart';
-import 'package:inside_out/screens/diary_screen.dart';
+import 'package:inside_out/screens/board/board_screen.dart';
+import 'package:inside_out/screens/diary/diary_screen.dart';
 import 'package:inside_out/screens/home_screen.dart';
+import 'package:inside_out/screens/signup_screen.dart';
 import 'package:inside_out/screens/sleep_screen.dart';
 import 'package:inside_out/screens/todo_screen.dart';
 
@@ -18,7 +19,7 @@ class _MyHomePageState extends State<MyApp> {
   int currentTab = 2;
 
   final PageStorageBucket bucket = PageStorageBucket();
-  Widget currentScreen = Home();
+  Widget currentScreen = SignUp();
 
   @override
   Widget build(BuildContext context) {
@@ -27,11 +28,9 @@ class _MyHomePageState extends State<MyApp> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: SafeArea(
-          child: PageStorage(
-            child: currentScreen,
-            bucket: bucket,
-          ),
+        body: PageStorage(
+          child: currentScreen,
+          bucket: bucket,
         ),
         floatingActionButton: SizedBox(
           height: 80.0,
@@ -97,7 +96,7 @@ class _MyHomePageState extends State<MyApp> {
                           minWidth: 40,
                           onPressed: () {
                             setState(() {
-                              currentScreen = Diary();
+                              currentScreen = const Diary();
                               currentTab = 0;
                             });
                           },
