@@ -225,15 +225,6 @@ class CreateDiaryState extends State<CreateDiary> {
                                         ),
                                       ],
                                     ),
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(10),
-                                      color: Colors.white,
-                                      boxShadow: const [
-                                        BoxShadow(
-                                            color: Color(0xFF90C8E8),
-                                            spreadRadius: 1),
-                                      ],
-                                    ),
                                     height: 150,
                                     // width: 200,
                                   ),
@@ -250,7 +241,7 @@ class CreateDiaryState extends State<CreateDiary> {
                         width: MediaQuery.of(context).size.width * 0.8,
                         height: MediaQuery.of(context).size.height * 0.4,
                         child: TextField(
-                          maxLines: null,
+                          maxLines: 15,
                           textInputAction: TextInputAction.done,
                           keyboardType: TextInputType.multiline,
                           decoration: InputDecoration(

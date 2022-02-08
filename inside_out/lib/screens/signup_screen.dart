@@ -147,23 +147,23 @@ class SignUpState extends State<SignUp> {
                         height: 25,
                       ),
                       const Text(
-                        'Sign up with Twitter',
+                        'Sign up with Facebook',
                         style: TextStyle(
-                          color: Colors.black,
+                          color: Colors.white,
                           fontSize: 15,
                         ),
                       ),
                       Opacity(
                         opacity: 0,
                         child: Image.asset(
-                          'assets/google_symbol.png',
+                          'assets/facebook_symbol.png',
                           height: 25,
                         ),
                       ),
                     ],
                   ),
                   height: 50,
-                  color: Colors.white,
+                  color: const Color(0xFF4267B2),
                   borderRadius: 12,
                   onPressed: () {
                     print('OK drawer');
@@ -176,12 +176,12 @@ class SignUpState extends State<SignUp> {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Image.asset(
-                        'assets/apple_symbol.png',
-                        height: 25,
+                      Icon(
+                        Icons.email_rounded,
+                        color: Colors.grey,
                       ),
                       const Text(
-                        'Apple로 로그인',
+                        'Sign up with Email',
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: 15,
@@ -197,7 +197,7 @@ class SignUpState extends State<SignUp> {
                     ],
                   ),
                   height: 50,
-                  color: Colors.white,
+                  color: Color(0xFFD7E9FF),
                   borderRadius: 12,
                   onPressed: () {
                     print('OK drawer');
