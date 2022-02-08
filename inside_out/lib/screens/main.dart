@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyApp> {
                     style: TextStyle(
                         fontSize: 12,
                         fontFamily: 'SeoulNamsan',
-                        color: currentTab == 2 ? Colors.black : Colors.grey),
+                        color: currentTab == 2 ? Colors.black : Colors.white),
                   )
                 ],
               ),
