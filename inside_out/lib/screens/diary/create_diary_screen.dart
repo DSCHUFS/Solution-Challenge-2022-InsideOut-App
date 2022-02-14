@@ -241,20 +241,17 @@ class CreateDiaryState extends State<CreateDiary> {
                         width: MediaQuery.of(context).size.width * 0.8,
                         height: MediaQuery.of(context).size.height * 0.4,
                         child: TextField(
-                          maxLines: 15,
+                          maxLines: null,
                           textInputAction: TextInputAction.done,
                           keyboardType: TextInputType.multiline,
                           decoration: InputDecoration(
-                            border: OutlineInputBorder(
-                              borderSide: BorderSide(
-                                width: 1,
-                                color: Color(0xFF90C8E8),
-                              ),
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(10.0),
-                              ),
+                            border: InputBorder.none,
+                            hintText: ' Write a Diary',
+                            hintStyle: TextStyle(
+                              color: Color(0xFF6B6B6B),
+                              fontSize: 17,
+                              fontFamily: "SeoulNamsan",
                             ),
-                            hintText: 'Write a Diary',
                           ),
                         ),
                       ),

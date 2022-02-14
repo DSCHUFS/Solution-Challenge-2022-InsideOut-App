@@ -81,11 +81,11 @@ class MyBoardState extends State<MyBoard> {
                 children: List.generate(50, (index) {
                   return Card(
                     margin: EdgeInsets.all(7.0),
-                    elevation: 5,
+                    elevation: 0,
                     child: Stack(
                       children: [
                         Image(
-                          image: AssetImage('assets/card.png'),
+                          image: AssetImage('assets/pink_card.png'),
                           fit: BoxFit.fill,
                         ),
                       ],
