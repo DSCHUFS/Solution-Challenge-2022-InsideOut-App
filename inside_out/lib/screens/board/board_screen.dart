@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:inside_out/screens/board/create_board_screen.dart';
+import 'package:inside_out/screens/board/detail_board_screen.dart';
 import 'package:inside_out/screens/board/my_board_screen.dart';
 import 'package:inside_out/widgets/custom_elevated_button.dart';
 
@@ -106,16 +107,26 @@ class BoardState extends State<Board> {
                           scrollDirection: Axis.horizontal,
                           itemCount: numbers.length,
                           itemBuilder: (context, index) {
-                            return Card(
-                              margin: EdgeInsets.all(5.0),
-                              elevation: 10,
-                              child: Stack(
-                                children: [
-                                  Image(
-                                    image: AssetImage('assets/card.png'),
-                                    fit: BoxFit.fill,
+                            return GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const BoardDetail(),
                                   ),
-                                ],
+                                );
+                              },
+                              child: Card(
+                                margin: EdgeInsets.all(5.0),
+                                elevation: 10,
+                                child: Stack(
+                                  children: [
+                                    Image(
+                                      image: AssetImage('assets/card.png'),
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ],
+                                ),
                               ),
                             );
                           }),
@@ -156,6 +167,8 @@ class BoardState extends State<Board> {
                     ),
                   ],
                 ),
+
+                // Recently Pinned
                 Padding(
                   padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
                   child: Container(
@@ -172,16 +185,26 @@ class BoardState extends State<Board> {
                           scrollDirection: Axis.horizontal,
                           itemCount: numbers.length,
                           itemBuilder: (context, index) {
-                            return Card(
-                              margin: EdgeInsets.all(5.0),
-                              elevation: 10,
-                              child: Stack(
-                                children: [
-                                  Image(
-                                    image: AssetImage('assets/card.png'),
-                                    fit: BoxFit.fill,
+                            return GestureDetector(
+                              onTap: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => const BoardDetail(),
                                   ),
-                                ],
+                                );
+                              },
+                              child: Card(
+                                margin: const EdgeInsets.all(5.0),
+                                elevation: 10,
+                                child: Stack(
+                                  children: [
+                                    Image(
+                                      image: AssetImage('assets/card.png'),
+                                      fit: BoxFit.fill,
+                                    ),
+                                  ],
+                                ),
                               ),
                             );
                           }),

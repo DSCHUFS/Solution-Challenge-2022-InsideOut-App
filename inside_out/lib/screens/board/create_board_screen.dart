@@ -101,7 +101,7 @@ class CreateBoardState extends State<CreateBoard> {
                           decoration: InputDecoration(
                             hintText: ' Title',
                             hintStyle: TextStyle(
-                              color: Colors.black,
+                              color: Color(0xFF6B6B6B),
                               fontSize: 25,
                               fontFamily: "SeoulNamsan",
                             ),
@@ -119,9 +119,10 @@ class CreateBoardState extends State<CreateBoard> {
                           textInputAction: TextInputAction.done,
                           keyboardType: TextInputType.multiline,
                           decoration: InputDecoration(
+                            border: InputBorder.none,
                             hintText: ' Write a Post',
                             hintStyle: TextStyle(
-                              color: Colors.black,
+                              color: Color(0xFF6B6B6B),
                               fontSize: 17,
                               fontFamily: "SeoulNamsan",
                             ),

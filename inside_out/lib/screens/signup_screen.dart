@@ -15,7 +15,7 @@ class SignUpState extends State<SignUp> {
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
         body: _buildContent(context),
-        backgroundColor: Color(0xFFFBF9FF),
+        backgroundColor: const Color(0xFFFBF9FF),
       ),
     );
   }
@@ -41,7 +41,7 @@ class SignUpState extends State<SignUp> {
                     ),
                   ),
                 ),
-                const SizedBox(height: 20.0),
+                const SizedBox(height: 40.0),
                 const TextField(
                   keyboardType: TextInputType.emailAddress,
                   textInputAction: TextInputAction.continueAction,
@@ -63,20 +63,6 @@ class SignUpState extends State<SignUp> {
                     filled: true,
                     fillColor: Colors.white,
                     labelText: 'Password',
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.all(
-                        Radius.circular(10.0),
-                      ),
-                    ),
-                  ),
-                  obscureText: true,
-                ),
-                const SizedBox(height: 12.0),
-                const TextField(
-                  decoration: InputDecoration(
-                    filled: true,
-                    fillColor: Colors.white,
-                    labelText: 'Confirm Password',
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(
                         Radius.circular(10.0),
