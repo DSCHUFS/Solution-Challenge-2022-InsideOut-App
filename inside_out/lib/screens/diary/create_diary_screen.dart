@@ -65,7 +65,7 @@ class CreateDiaryState extends State<CreateDiary> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.8,
+                  // height: MediaQuery.of(context).size.height * 0.83,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage("assets/write.png"),
@@ -285,6 +285,9 @@ class CreateDiaryState extends State<CreateDiary> {
                             width: 20,
                           ),
                         ],
+                      ),
+                      const SizedBox(
+                        height: 60,
                       ),
                     ],
                   ),
