@@ -69,7 +69,6 @@ class CreateBoardState extends State<CreateBoard> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.8,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage("assets/new_post.png"),
@@ -81,19 +80,6 @@ class CreateBoardState extends State<CreateBoard> {
                       const SizedBox(
                         height: 60,
                       ),
-                      // const Text(
-                      //   "Title",
-                      //   style: TextStyle(
-                      //     color: Colors.black,
-                      //     fontSize: 25,
-                      //     fontFamily: "Share",
-                      //   ),
-                      // ),
-                      // SizedBox(
-                      //   width: MediaQuery.of(context).size.width * 0.8,
-                      //   child:
-                      //       const Divider(color: Colors.black, thickness: 1.0),
-                      // ),
                       SizedBox(
                         width: MediaQuery.of(context).size.width * 0.8,
                         child: TextField(

@@ -52,6 +52,21 @@ class DiaryState extends State<Diary> {
       // ),
       body: _buildContent(context),
       backgroundColor: Colors.white,
+      floatingActionButton: FloatingActionButton(
+        heroTag: "CreateDiary",
+        backgroundColor: Colors.white,
+        child: Image.asset(
+          'assets/pen.png',
+          width: 30,
+          height: 30,
+        ),
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const CreateDiary()),
+          );
+        },
+      ),
     );
   }
 
@@ -78,17 +93,14 @@ class DiaryState extends State<Diary> {
                           fontFamily: 'SeoulNamsan',
                         ),
                       ),
-                      IconButton(
-                        icon: Image.asset('assets/pen.png'),
-                        iconSize: 30,
-                        onPressed: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                                builder: (context) => const CreateDiary()),
-                          );
-                        },
-                      )
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Image.asset(
+                          'assets/pen.png',
+                          width: 30,
+                          height: 30,
+                        ),
+                      ),
                     ],
                   ),
                 ),

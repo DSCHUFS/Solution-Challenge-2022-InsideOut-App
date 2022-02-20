@@ -95,7 +95,6 @@ class BoardDetailState extends State<BoardDetail> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                  height: MediaQuery.of(context).size.height * 0.8,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
                       image: AssetImage("assets/post_detail.png"),
@@ -140,7 +139,7 @@ class BoardDetailState extends State<BoardDetail> {
                         child: const Divider(
                             color: Color(0xFFB9B9B9), thickness: 1.0),
                       ),
-                      Container(
+                      SizedBox(
                         height: MediaQuery.of(context).size.height * 0.20,
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
@@ -216,6 +215,9 @@ class BoardDetailState extends State<BoardDetail> {
                             ),
                           ],
                         ),
+                      ),
+                      const SizedBox(
+                        height: 40,
                       ),
                     ],
                   ),
