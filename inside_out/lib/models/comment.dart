@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+// post - comment, subcollection
 class Comment {
   Comment({
     required this.id,

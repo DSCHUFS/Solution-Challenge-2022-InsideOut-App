@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+// user - sleep, subcollection
 class Sleep {
   Sleep({
     required this.id,

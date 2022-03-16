@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+// post, main collection
 class Post {
   Post({
     required this.id,

@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+// user - diary, subcollection
 class Diary {
   Diary({
     required this.id,
