@@ -18,7 +18,7 @@ class Post {
   final String postContent;
   final int like;
 
-  factory Post.fromMap(Map<dynamic, dynamic> data, String id){
+  factory Post.fromMap(Map<String, dynamic> data, String id){
     return Post(
       id: id,
       userId: data['userId'],
@@ -29,8 +29,8 @@ class Post {
     );
   }
 
-  Map<dynamic, dynamic> toMap(){
-    return <dynamic, dynamic>{
+  Map<String, dynamic> toMap(){
+    return <String, dynamic>{
       'userId': userId,
       'date': date,
       'postTitle': postTitle,

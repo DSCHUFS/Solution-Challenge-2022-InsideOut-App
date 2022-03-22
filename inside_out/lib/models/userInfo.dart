@@ -20,6 +20,13 @@ class UserInfo {
       sleepGoals: data['sleepGoals']
     );
   }
+
+  Map<String, dynamic> toMap() {
+    return <String, dynamic>{
+      'email': email,
+      'sleepGoals': sleepGoals,
+    };
+  }
 }
 
 class GoalTime {
@@ -43,4 +50,6 @@ class GoalTime {
       sleepMinutes: data['sleepMinutes'],
     );
   }
+
+  
 }
