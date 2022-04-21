@@ -37,6 +37,13 @@ dependencies:
   syncfusion_flutter_calendar: ^19.4.50
   time_chart: ^0.3.2
   percent_indicator: ^4.0.0
+  
+  # firebase 연동
+  firebase_core: ^1.13.1
+  firebase_analytics: ^9.1.2
+  cloud_firestore: ^3.1.10
+  firebase_auth: ^3.3.11
+
 
 dev_dependencies:
   flutter_test:
