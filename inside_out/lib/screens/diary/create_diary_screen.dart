@@ -139,7 +139,6 @@ class CreateDiaryState extends State<CreateDiary> {
                                       Radius.circular(10.0),
                                     ),
                                   ),
-                                  // contentPadding: EdgeInsets.only(top: 10.0),
                                   content: Container(
                                     child: Column(
                                       mainAxisAlignment:
