@@ -190,7 +190,7 @@ class SleepAnalyticsState extends State<SleepAnalytics> {
             ),
           ),
 
-          // Sleep Regualarity Chart
+          // Sleep Regularity Chart
           TimeChart(
             data: data,
             chartType: ChartType.time,
