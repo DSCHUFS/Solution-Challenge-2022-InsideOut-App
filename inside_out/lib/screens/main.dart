@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:inside_out/screens/board/board_screen.dart';
+import 'package:inside_out/screens/check_screen.dart';
 import 'package:inside_out/screens/diary/diary_screen.dart';
 import 'package:inside_out/screens/home_screen.dart';
 import 'package:inside_out/screens/signup_screen.dart';
-import 'package:inside_out/screens/sleep_screen.dart';
+import 'package:inside_out/screens/sleep/sleep_screen.dart';
 import 'package:inside_out/screens/todo_screen.dart';
 
 void main() => runApp(MyApp());
@@ -58,7 +59,7 @@ class _MyHomePageState extends State<MyApp> {
               ),
               onPressed: () {
                 setState(() {
-                  currentScreen = Home();
+                  currentScreen = Check();
                   currentTab = 2;
                 });
               },

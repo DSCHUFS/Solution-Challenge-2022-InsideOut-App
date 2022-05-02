@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:inside_out/screens/home_screen.dart';
+import 'package:inside_out/screens/main.dart';
 import 'package:inside_out/widgets/custom_elevated_button.dart';
 
 class Check extends StatefulWidget {
